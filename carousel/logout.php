@@ -7,5 +7,5 @@
 	session_destroy();
 	echo "<script>";
 	echo "window.location='../carousel/index.php';";
-	echo "</script>";
+	echo "</script>"; 
 ?>
