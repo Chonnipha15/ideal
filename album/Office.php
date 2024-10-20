@@ -4,7 +4,7 @@ error_reporting(0);
 <?php
 include_once("checklogin.php");
 session_start();
-	include("connectdb.php");
+	include("connect.php");
 ?>
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
