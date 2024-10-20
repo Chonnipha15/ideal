@@ -1,6 +1,6 @@
 <?php
 include_once("../../ip/album/checklogin.php");
-include_once("../../ip/album/connectdb.php");
+include_once("../../ip/album/connect.php");
 
 // ตรวจสอบการเชื่อมต่อกับฐานข้อมูล
 if (!$conn) {
