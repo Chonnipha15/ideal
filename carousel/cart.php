@@ -133,6 +133,7 @@ error_reporting(E_NOTICE);
 <!-- Three columns of text below the carousel -->
 <div class="album py-5 bg-body-tertiary">
 <div class="container">
+<br>
 <blockquote>
 <h2>ตะกร้าสินค้า - IDEAL HOME</h2>
 <a href="index3.php" class="btn btn-primary">กลับไปเลือกสินค้า</a> 
