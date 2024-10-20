@@ -44,14 +44,30 @@ $data2 = mysqli_fetch_array($rs2);
         <div class="form-group">
             <label for="ptype">ประเภทสินค้า</label>
             <select name="ptype" class="form-control">
-               <?php	
-	include_once("../../ip/album/connect.php");
-	$sql2 = "SELECT * FROM `type` ORDER BY t_name ASC ";
-	$rs2 = mysqli_query($conn, $sql2) ;
-	while ($data2 = mysqli_fetch_array($rs2) ){
-	?>
-    	<option value="<?= htmlspecialchars($data2['t_id']); ?>"><?= htmlspecialchars($data2['t_name']); ?></option>
-    <?php } ?>
+            <?php
+// เริ่มต้นการเชื่อมต่อกับฐานข้อมูล
+include_once("../../ip/album/connect.php");
+
+// ตรวจสอบการเชื่อมต่อฐานข้อมูล
+if (!$conn) {
+    die("เชื่อมต่อฐานข้อมูลไม่ได้: " . mysqli_connect_error());
+}
+
+// คำสั่ง SQL เพื่อดึงข้อมูลจากตาราง `type`
+$sql2 = "SELECT * FROM `type` ORDER BY t_name ASC";
+$rs2 = mysqli_query($conn, $sql2);
+
+// ตรวจสอบว่ามีข้อมูลหรือไม่
+if ($rs2 && mysqli_num_rows($rs2) > 0) {
+    // แสดงตัวเลือกประเภท
+    while ($data2 = mysqli_fetch_array($rs2)) {
+        ?>
+        <option value="<?= htmlspecialchars($data2['t_id']); ?>"><?= htmlspecialchars($data2['t_name']); ?></option>
+        <?php
+    }
+} else {
+    echo "<option value=''>ไม่มีประเภทสินค้า</option>";
+}
             </select>
         </div>
         <div class="text-center">
