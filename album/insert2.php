@@ -50,7 +50,7 @@ $data2 = mysqli_fetch_array($rs2);
 	$rs2 = mysqli_query($conn, $sql2) ;
 	while ($data2 = mysqli_fetch_array($rs2) ){
 	?>
-    	<option value="<?=$data2['t_id'];?>"><?=$data2['t_name'];?></option>
+    	<option value="<?= htmlspecialchars($data2['t_id']); ?>"><?= htmlspecialchars($data2['t_name']); ?></option>
     <?php } ?>
             </select>
         </div>
