@@ -1,7 +1,7 @@
 <?php
 	$host = "localhost";
 	$usr = "root";
-	$pwd =  "";
+	$pwd =  "630515";
 	$db = "ideal_home";
 
 	$conn = mysqli_connect($host,$usr,$pwd,$db) or die ("เชื่อมต่อผ่านข้อมูลไม่ได้");
