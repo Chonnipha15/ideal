@@ -18,9 +18,7 @@ $data1 = mysqli_fetch_array($rs1);
     </style>
 </head>
 <body>
-<center>
-<a class="navbar-brand" href=""><img src="images/logo.jpg" width="250" height="250" /></a>
-</center>
+
 <div class="container mt-5">
     <h2 class="text-center">IDEAL HOME-แก้ไขข้อมูลส่วนตัว</h2>
     <form method="POST" action="" enctype="multipart/form-data">
