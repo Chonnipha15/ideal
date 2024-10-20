@@ -1,6 +1,6 @@
 <?php
 include_once("../../ip/album/checklogin.php");
-include_once("../../ip/album/connect.php");
+include_once("../../ip/album/connectdb.php");
 
 // ตรวจสอบการเชื่อมต่อกับฐานข้อมูล
 if (!$conn) {
@@ -26,7 +26,7 @@ $data2 = mysqli_fetch_array($rs2);
 </head>
 <body>
 <center>
-<a class="navbar-brand" href=""><img id="logo" src="../../ip/album/0.jpg" width="250" height="250" /></a>
+<a class="navbar-brand" href=""><img src="0.jpg" width="250" height="250" /></a>
 </center>
 <div class="container mt-5">
     <h2 class="text-center">IDEAL HOME - เพิ่มสินค้า</h2>
