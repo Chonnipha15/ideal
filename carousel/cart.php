@@ -217,7 +217,7 @@ if(!empty($_SESSION['sid'])) {
 </main>
 
 
-    <script src="../../ip/assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.2.0/js/bootstrap.bundle.min.js"></script>
    
  
   </body>
