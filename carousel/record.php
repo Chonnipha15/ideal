@@ -49,6 +49,10 @@ if(!isset($_SESSION['cid'])){
 		unset($_SESSION['spicture']);
 		unset($_SESSION['sitem']);
 		
-echo "<meta http-equiv=\"refresh\" content=\"0;URL=clear2.php\">";
+	echo "<meta http-equiv=\"refresh\" content=\"0;URL=clear2.php\">";
+	echo "<script>";
+	echo "alert('สั่งซื้อสินค้าสำเร็จ');";
+	echo "window.location='index3.php';";
+	echo "</script>";
 	}
 ?>
