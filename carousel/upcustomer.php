@@ -19,7 +19,7 @@ $data1 = mysqli_fetch_array($rs1);
 </head>
 <body>
 <center>
-<a class="navbar-brand" href=""><img src="../../images/0.jpg" width="250" height="250" /></a>
+<a class="navbar-brand" href=""><img src="../../images/HM.jpg" width="250" height="250" /></a>
 </center>
 <div class="container mt-5">
     <h2 class="text-center">IDEAL HOME-แก้ไขข้อมูลส่วนตัว</h2>
