@@ -46,7 +46,7 @@ $data2 = mysqli_fetch_array($rs2);
             <select name="ptype" class="form-control">
             <?php
 // เริ่มต้นการเชื่อมต่อกับฐานข้อมูล
-include_once("../../ip/album/connect.php");
+include_once("../../ideal/album/connect.php");
 
 // ตรวจสอบการเชื่อมต่อฐานข้อมูล
 if (!$conn) {
@@ -59,7 +59,7 @@ if (!$conn) {
                 $rs = mysqli_query($conn, $sql);
                 while ($data = mysqli_fetch_array($rs)) {
                 ?>
-                    <option value="<?=$data['t_id'];?>" <?=($data1['p_type']==$data['t_id'])?"selected":"";?>><?=$data['t_name'];?></option>
+                    <option value="<?=$data['t_id'];?>" <?=($data['p_type']==$data['t_id'])?"selected":"";?>><?=$data['t_name'];?></option>
             
 <?php } ?>
             </select>
