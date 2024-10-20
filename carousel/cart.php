@@ -34,7 +34,7 @@ error_reporting(E_NOTICE);
 
     
 
-<link href="../../ip/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.2.0/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
