@@ -54,20 +54,14 @@ if (!$conn) {
 }
 
 // คำสั่ง SQL เพื่อดึงข้อมูลจากตาราง `type`
-$sql2 = "SELECT * FROM `type` ORDER BY t_name ASC";
-$rs2 = mysqli_query($conn, $sql2);
 
-// ตรวจสอบว่ามีข้อมูลหรือไม่
-if ($rs2 && mysqli_num_rows($rs2) > 0) {
-    // แสดงตัวเลือกประเภท
-    while ($data2 = mysqli_fetch_array($rs2)) {
-        ?>
-        <option value="<?= htmlspecialchars($data2['t_id']); ?>"><?= htmlspecialchars($data2['t_name']); ?></option>
-        <?php
-    }
-} else {
-    echo "<option value=''>ไม่มีประเภทสินค้า</option>";
-}
+                $sql = "SELECT * FROM `type` ORDER BY t_name ASC ";
+                $rs = mysqli_query($conn, $sql);
+                while ($data = mysqli_fetch_array($rs)) {
+                ?>
+                    <option value="<?=$data['t_id'];?>" <?=($data1['p_type']==$data['t_id'])?"selected":"";?>><?=$data['t_name'];?></option>
+            
+<?php } ?>
             </select>
         </div>
         <div class="text-center">
